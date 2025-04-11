@@ -1,7 +1,7 @@
 # GBD Data Repository
 
 This repository contains the databases used by GBD.
-The sqlite3 databases are stored as SQL dumps for git diff to work.
+For git-diff to work, the sqlite3 databases are stored as SQL dumps.
 To check out the sqlite databases, you must first set git-clean and git-smudge filters by running the following commands:
 ```
 git config --global filter.dumpsql.clean 'tmp=$(mktemp); cat > $tmp; sqlite3 $tmp .dump; rm $tmp'
