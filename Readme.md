@@ -8,3 +8,4 @@ git config --global filter.dumpsql.clean 'tmp=$(mktemp); cat > $tmp; sqlite3 $tm
 git config --global filter.dumpsql.smudge 'tmp=$(mktemp); sqlite3 $tmp; cat $tmp; rm $tmp'
 ```
 This requires sqlite3 to be installed.
+You can also install the dumpsql filter locally by omitting the "--global" option.
